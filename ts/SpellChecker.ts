@@ -99,16 +99,18 @@ export class SpellChecker {
             let offset = json.offset;
             let length = json.length;
 
-            let message = json.message;
+            let message = json.message.replace("'", '&#039;');
             let replacements: string[] = [];
 
             json.replacements.forEach((value: any) => {
-                replacements.push(value.value);
+                replacements.push(value.value.replace("'", '&#039;'));
             });
 
             //let match: any = element.text().slice(offset).slice(0, length);
 
             let error_id = json.rule.id;
+            let category_id = json.rule.category.id;
+            if(category_id == 'REDUNDANCY') error_id = 'REDUNDANCY';
 
             let start = offset;
             let end = offset + length;
@@ -200,7 +202,7 @@ export class SpellChecker {
     }
 
     private getSpellClass(error_id: string): string {
-        let blue = ['RELACIONADO', 'COMPLEJIZAR'];
+        let blue = ['RELACIONADO', 'COMPLEJIZAR', 'IN_A_X_MANNER', 'REDUNDANCY'];
         let red = ['MORFOLOGIK_RULE'];
 
         for (let o of blue) {

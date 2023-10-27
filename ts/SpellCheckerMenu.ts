@@ -23,7 +23,7 @@ export class SpellCheckerMenu {
             return;
         }
 
-        if(SpellCheckerMenu.lastElementClicked != null && !SpellCheckerMenu.lastElementClicked.is(this.element)) menu.html(''); // If is clicking a new error text will reset the menu
+        if(SpellCheckerMenu.lastElementClicked != null && !SpellCheckerMenu.lastElementClicked.is(this.element)) menu.html('').css('visibility', 'hidden'); // If is clicking a new error text will reset the menu
         if(menu.find('*').length !== 0) return; // If is already created the html with the replacement options, etc
 
         SpellCheckerMenu.lastElementClicked = this.element;
