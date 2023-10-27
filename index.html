@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/jquery-spellchecker-lt.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-spellchecker-lt.js"></script>
+        <script src="https://cdn.tailwindcss.com" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.7.1/tinymce.min.js" integrity="sha512-gU3jUYol3xDf4bIwFdQNsfnjBphHHVWicFHCzXa91qvOENV+QhuL329AcZT2oFiXU0HAJSxdqyp3jXzlJmn65g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body class="p-10">
+        <div class="p-2.5 border-2 border-[black] h-48 w-full" id="documentEditor" contenteditable="true">
+            <p>Hola</p>
+        </div>
+    </body>
+
+    <script>
+        tinymce.init({
+            selector: '#documentEditor',
+            inline: true, // Remove the iframe creation
+            browser_spellcheck: false,
+            plugins: "lists link image code wordcount searchreplace powerpaste autolink emoticons table",
+            toolbar: 'undo redo | styles | h1 h2 h3 h4 | forecolor | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist checklist | outdent indent | link image emoticons | removeformat code | commands',
+            contextmenu: 'copy pastetext cut link removeformat',
+            menubar: true,
+            branding: true,
+            wordcount: true,
+        });
+
+        $('#documentEditor').spellchecker();
+    </script>
+</html>

@@ -1,0 +1,79 @@
+.spellchecker-menu {
+    z-index: 999;
+    visibility: visible;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    background-color: white;
+    border: 2px solid;
+    max-height: none!important;
+    max-width: 320px!important;
+    min-width: 220px!important;
+    border-radius: 0.650rem;
+    padding: 12px 20px;
+}
+
+.spellchecker-menu-headline:before {
+    border-radius: 50%;
+    content: "";
+    width: 8px;
+    height: 8px;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+.spellchecker-menu-close {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    top: 5px;
+    color: grey;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.spellchecker-option {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.spellchecker-error:before {
+    background-color: #EB5757;
+}
+
+.spellchecker-gramatic:before {
+    background-color: #f2b24c;
+}
+
+.spellchecker-style:before {
+    background-color: #5c4cff;
+}
+
+.spellchecker-match-error {
+    border-bottom: #EB5757 solid 3px;
+}
+
+.spellchecker-match-error:hover{
+    background-color: rgba(235,88,88,0.2);
+    cursor:pointer;
+}
+
+.spellchecker-match-gramatic {
+    border-bottom: #f2b24c solid 3px;
+}
+
+.spellchecker-match-gramatic:hover{
+    background-color: rgba(242,179,77,0.3);
+    cursor:pointer;
+}
+
+.spellchecker-match-style {
+    border-bottom: #5c4cff solid 3px;
+}
+
+.spellchecker-match-style:hover{
+    background-color: rgba(142,128,255,0.2);
+    cursor:pointer;
+}
