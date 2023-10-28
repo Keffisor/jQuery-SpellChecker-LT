@@ -8,3 +8,12 @@
 <img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/1.png"/>
 <img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/2.png"/>
 <img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/3.png"/>
+<br>
+You can try in the live demo at https://keffisor21.com/github/jquery-spellchecker-lt/.
+
+<br>
+## Usage
+<hr>
+```
+AAAA
+```
