@@ -3,6 +3,7 @@ import { NodeController } from './NodeController';
 import { SpellCheckerAPI } from './SpellCheckerAPI';
 import { Utils } from './Utils';
 import { SpellCheckerMenu } from './SpellCheckerMenu';
+import { Config } from './Config';
 
 export class SpellChecker {
     private element: JQuery;
@@ -46,7 +47,7 @@ export class SpellChecker {
         setTimeout(() => {
             if (!this.isActive) return;
             this.startSpellCheck();
-        }, 6.2 * 1000);
+        }, Config.REQUEST_COOLDOWN * 1000);
 
     }
 

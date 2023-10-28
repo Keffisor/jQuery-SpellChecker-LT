@@ -1,10 +1,11 @@
 import * as $ from 'jquery';
+import { Config } from './Config';
 
 export class SpellCheckerAPI {
 
     static async check(text: string): Promise<any> {
         let settings = {
-            "url": "https://api.languagetool.org/v2/check",
+            "url": Config.BASE_ENDPOINT_URL,
             "method": "POST",
             "timeout": 0,
             "headers": {
