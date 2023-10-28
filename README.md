@@ -11,7 +11,8 @@
 <br>
 <p>You can try in the live demo at https://keffisor21.com/github/jquery-spellchecker-lt/.</p>
 <br>
-### Usage
+## Usage
+<br>
 ```
 AAAA
 ```
