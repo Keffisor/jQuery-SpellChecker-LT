@@ -9,10 +9,9 @@
 <img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/2.png"/>
 <img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/3.png"/>
 <br>
-You can try in the live demo at https://keffisor21.com/github/jquery-spellchecker-lt/.
-
+<p>You can try in the live demo at https://keffisor21.com/github/jquery-spellchecker-lt/.</p>
 <br>
-## Usage
+### Usage
 ```
 AAAA
 ```
