@@ -3,3 +3,8 @@
 # JQuery-SpellChecker-LT
 **JQuery-SpellChecker-LT** - Add a SpellChecker integration to any editor using LanguageTool's API.
 
+## Demo
+<img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/preview.gif"/>
+<img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/1.png"/>
+<img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/2.png"/>
+<img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/3.png"/>
