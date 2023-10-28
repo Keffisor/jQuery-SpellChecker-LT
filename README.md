@@ -13,14 +13,14 @@
 ## Usage
 
 You can just init the spellchecker with the default configuration using jQuery.
-```
+```js
 $('#documentEditor').spellchecker();
 ```
 
 ### Custom Options
 
 You can provide custom options to the spellchecker.
-```
+```js
 $('#documentEditor').spellchecker({
   endpoint_url: "https://api.languagetool.org/v2/check",
   request_cooldown: 6.2
