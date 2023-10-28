@@ -13,7 +13,6 @@ You can try in the live demo at https://keffisor21.com/github/jquery-spellchecke
 
 <br>
 ## Usage
-<hr>
 ```
 AAAA
 ```
