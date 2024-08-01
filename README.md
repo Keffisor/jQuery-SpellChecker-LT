@@ -1,7 +1,12 @@
 [![Commit Activity](https://img.shields.io/github/commit-activity/m/Keffisor/JDAExpansion)](https://github.com/Keffisor/JDAExpansion/commits/master)
 <br>
+<<<<<<< HEAD
 # JQuery-SpellChecker-LT
 **JQuery-SpellChecker-LT** - Add a SpellChecker integration to any editor using LanguageTool's API.
+=======
+# jQuery-SpellChecker-LT
+**jQuery-SpellChecker-LT** - Add a SpellChecker integration to any editor using LanguageTool's API.
+>>>>>>> 6b605b2ee1f26555945924cfe6b71a742860c8c4
 
 ## Demo
 <img src="https://keffisor21.com/github/jquery-spellchecker-lt/imgs/preview.gif"/>
@@ -13,14 +18,22 @@
 ## Usage
 
 You can just init the spellchecker with the default configuration using jQuery.
+<<<<<<< HEAD
 ```
+=======
+```js
+>>>>>>> 6b605b2ee1f26555945924cfe6b71a742860c8c4
 $('#documentEditor').spellchecker();
 ```
 
 ### Custom Options
 
 You can provide custom options to the spellchecker.
+<<<<<<< HEAD
 ```
+=======
+```js
+>>>>>>> 6b605b2ee1f26555945924cfe6b71a742860c8c4
 $('#documentEditor').spellchecker({
   endpoint_url: "https://api.languagetool.org/v2/check",
   request_cooldown: 6.2
@@ -30,3 +43,7 @@ $('#documentEditor').spellchecker({
 <b>Options available:</b>
 - ```endpoint_url```: The URL where will connect to retrieve the spell check. This is ideal for set a custom languagetool server endpoint.
 - ```request_cooldown```: Change the wait time when the user start's typing to connect into the endpoint.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6b605b2ee1f26555945924cfe6b71a742860c8c4
