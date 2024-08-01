@@ -4,7 +4,7 @@ import { Config } from './Config';
 export class SpellCheckerAPI {
 
     static async check(text: string): Promise<any> {
-        let settings = {
+        let settings: any = {
             "url": Config.BASE_ENDPOINT_URL,
             "method": "POST",
             "timeout": 0,
@@ -13,9 +13,11 @@ export class SpellCheckerAPI {
             },
             "data": {
                 "text": text,
-                "language": "auto"
+                "language": Config.LANGUAGE
             }
         };
+
+        if(Config.API_KEY != null) settings['data']['apiKey'] = Config.API_KEY;
 
         let response = await new Promise((resolve, reject) => {
             $.ajax(settings).done(resolve).fail(reject);

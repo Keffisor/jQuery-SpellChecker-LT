@@ -159,6 +159,9 @@ export class SpellChecker {
         const offset = sel.focusOffset;
         const pos = this.nodeController.getCursorPosition(positioned_node, node, offset, { pos: 0, done: false });
 
+        const selection_positions = this.nodeController.getSelectionPosition();
+        const selection_text = this.nodeController.getSelectionText();
+
         // If for some reason you're watching this, you will say, what the fuck is this? Well, sometimes the insertAt and some shit that I don't remember makes 
         // the html bugged with strange symbols, I don't know the reason XD. I imagine now after a lot of months later that are < and > converted to text format and it's a malformation of the html
         if(pos == null || html.includes('&amp;') || html.includes('&nbsp;')) {
@@ -174,11 +177,22 @@ export class SpellChecker {
 
         if(cursorFix) {
             sel.removeAllRanges();
-            const range = this.nodeController.setCursorPosition(positioned_node, document.createRange(), {
+
+            let range = this.nodeController.setCursorPosition(positioned_node, document.createRange(), {
                 pos: pos.pos,
                 done: false,
             });
-            range.collapse(true);
+
+            if(selection_text.length !== 0) {
+                range = this.nodeController.setCursorPosition(positioned_node, range, {
+                    pos: selection_positions?.end,
+                    done: false
+                }, true);
+            }
+
+            if(selection_text.length !== 0) console.log('selec text trigger');
+
+            if(selection_text.length === 0) range.collapse(true);
             sel.addRange(range);
         }
 
@@ -203,7 +217,7 @@ export class SpellChecker {
     }
 
     private getSpellClass(error_id: string): string {
-        let blue = ['RELACIONADO', 'COMPLEJIZAR', 'IN_A_X_MANNER', 'REDUNDANCY'];
+        let blue = ['RELACIONADO', 'RELATED', 'COMPLEJIZAR', 'IN_A_X_MANNER', 'REDUNDANCY'];
         let red = ['MORFOLOGIK_RULE'];
 
         for (let o of blue) {

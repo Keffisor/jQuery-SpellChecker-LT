@@ -9,5 +9,31 @@
     "ts-loader": "^9.5.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "name": "jquery-spellchecker-lt",
+  "description": "[![Commit Activity](https://img.shields.io/github/commit-activity/m/Keffisor/JDAExpansion)](https://github.com/Keffisor/JDAExpansion/commits/master)\r <br>\r # JQuery-SpellChecker-LT\r **JQuery-SpellChecker-LT** - Add a SpellChecker integration to any editor using LanguageTool's API.",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keffisor/jQuery-SpellChecker-LT.git"
+  },
+  "keywords": [
+    "spellchecker",
+    "language",
+    "spellcheck",
+    "grammar",
+    "languagetool",
+    "grammar-checker",
+    "spellchecking"
+  ],
+  "author": "Keffisor21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keffisor/jQuery-SpellChecker-LT/issues"
+  },
+  "homepage": "https://github.com/Keffisor/jQuery-SpellChecker-LT#readme"
 }

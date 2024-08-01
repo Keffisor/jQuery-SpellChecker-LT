@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './ts/Main.ts',
+    entry: './src/Main.ts',
     module: {
         rules: [
             {
@@ -13,7 +13,7 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
-        filename: 'js/jquery-spellchecker-lt.js',
+        filename: 'dist/jquery-spellchecker-lt.js',
         path: __dirname,
     },
 };
