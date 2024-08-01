@@ -30,7 +30,4 @@ $('#documentEditor').spellchecker({
 <b>Options available:</b>
 - ```endpoint_url```: The URL where will connect to retrieve the spell check. This is ideal for set a custom languagetool server endpoint.
 - ```request_cooldown```: Change the wait time when the user start's typing to connect into the endpoint.
-<<<<<<< HEAD
 - ```language```: Change the language of the spellchecker (default is "auto").
-=======
->>>>>>> e4c133b525ce149b06b286afabbccd494fd4a916
